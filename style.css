@@ -46,6 +46,7 @@ header {
 nav ul {
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 }
 
 nav li {
@@ -57,14 +58,21 @@ nav a {
 	text-transform: uppercase;
 }
 
-h1 {
-	font-size: 48px;
-	margin-top: 20px;
+nav .login,
+nav .signup {
+	background-color: #333;
+	color: #fff;
+	padding: 10px 20px;
+	border-radius: 5px;
 }
 
-img {
-	max-width: 100%;
-	height: auto;
+nav .login:hover,
+nav .signup:hover {
+	background-color: #666;
+}
+
+h1 {
+	font-size: 48px;
 	margin-top: 20px;
 }
 
@@ -88,17 +96,6 @@ section {
 h3 {
 	font-size: 32px;
 	margin-bottom: 10px;
-}
-
-.gallery {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-}
-
-.gallery img {
-	width: 48%;
-	margin-bottom: 20px;
 }
 
 blockquote {
@@ -162,4 +159,27 @@ footer li {
 
 footer a {
 	color: #fff;
+}
+
+/* Responsive styles */
+
+@media screen and (max-width: 768px) {
+	header {
+		padding: 10px;
+	}
+
+	nav ul {
+		display: block;
+	}
+
+	nav li {
+		margin-right: 0;
+		margin-bottom: 10px;
+	}
+
+	nav .login,
+	nav .signup {
+		display: block;
+		margin-bottom: 10px;
+	}
 }
