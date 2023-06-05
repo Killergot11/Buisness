@@ -38,6 +38,9 @@ button:hover {
 /* Header styles */
 
 header {
+	audio {
+	display: none;
+}
 	background-color: #f2f2f2;
 	padding: 20px;
 	text-align: center;
