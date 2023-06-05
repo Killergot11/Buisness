@@ -1,50 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>Business Landing Page</title>
+	<title>Handmade Candles - Home</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
-
 <body>
-  <header class="header">
-    <nav class="navbar">
-      <div class="logo">Business Name</div>
-      <ul class="nav-menu">
-        <li class="nav-item"><a href="#services">Services</a></li>
-        <li class="nav-item"><a href="#about">About</a></li>
-        <li class="nav-item"><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Shop</a></li>
+				<li><a href="#">About Us</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</nav>
+		<h1>Handmade Candles</h1>
+		<img src="hero.jpg" alt="Handmade Candles">
+		<h2>Natural, Long-Lasting, and Beautifully Scented</h2>
+		<button>Shop Now</button>
+	</header>
+	<main>
+		<section>
+			<h3>Features</h3>
+			<ul>
+				<li>Handmade with all-natural ingredients</li>
+				<li>Long-lasting burn time</li>
+				<li>Available in a variety of scents and sizes</li>
+				<li>Perfect for creating a cozy atmosphere</li>
+			</ul>
+		</section>
+		<section>
+			<h3>Testimonials</h3>
+			<blockquote>"I absolutely love these candles! They smell amazing and last so long." - Sarah</blockquote>
+			<blockquote>"I've tried many candles over the years, but these are by far the best. Highly recommended!" - John</blockquote>
+		</section>
+		<section>
+			<h3>Product Showcase</h3>
+			<div class="gallery">
+				<img src="product1.jpg" alt="Handmade Candle">
+				<img src="product2.jpg" alt="Handmade Candle">
+				<img src="product3.jpg" alt="Handmade Candle">
+				<img src="product4.jpg" alt="Handmade Candle">
+			</div>
+		</section>
+		<section>
+			<h3>About Us</h3>
+			<p>We are a small family-owned business that takes pride in creating high-quality handmade candles using only the finest natural ingredients. Our candles are perfect for creating a warm and cozy atmosphere in your home or office. We believe in sustainability, ethical sourcing, and giving back to the community. Thank you for supporting our small business!</p>
+		</section>
+		<section>
+			<h3>Contact Us</h3>
+			<form>
+				<label for="name">Name:</label>
+				<input type="text" id="name" name="name"><br>
 
-  <section class="hero-section">
-    <div class="hero-text">
-      <h1>Welcome to Our Business</h1>
-      <p>Delivering exceptional services and solutions to our customers.</p>
-    </div>
-  </section>
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email"><br>
 
-  <section id="services" class="services-section">
-    <h2>Services</h2>
-    <!-- Add service items here -->
-  </section>
+				<label for="message">Message:</label>
+				<textarea id="message" name="message"></textarea><br>
 
-  <section id="about" class="about-section">
-    <h2>About Us</h2>
-    <!-- Add about us content here -->
-  </section>
-
-  <section id="contact" class="contact-section">
-    <h2>Contact Us</h2>
-    <!-- Add contact form or contact information here -->
-  </section>
-
-  <footer class="footer">
-    <p>&copy; 2023 Business Name. All rights reserved.</p>
-  </footer>
+				<input type="submit" value="Send">
+			</form>
+		</section>
+	</main>
+	<footer>
+		<p>&copy; 2023 Handmade Candles. All rights reserved.</p>
+		<nav>
+			<ul>
+				<li><a href="#">Privacy Policy</a></li>
+				<li><a href="#">Terms of Service</a></li>
+				<li><a href="#">FAQ</a></li>
+			</ul>
+		</nav>
+	</footer>
 </body>
-
 </html>
