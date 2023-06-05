@@ -6,16 +6,8 @@ body {
 	font-family: Arial, sans-serif;
 	margin: 0;
 	padding: 0;
-}
-
-h1, h2, h3 {
-	margin-top: 0;
-}
-
-ul {
-	list-style: none;
-	margin: 0;
-	padding: 0;
+	background-color: #f2f2f2;
+	color: #333;
 }
 
 a {
@@ -28,7 +20,9 @@ button {
 	color: #fff;
 	padding: 10px 20px;
 	border: none;
+	border-radius: 5px;
 	cursor: pointer;
+	transition: background-color 0.3s ease;
 }
 
 button:hover {
@@ -38,18 +32,38 @@ button:hover {
 /* Header styles */
 
 header {
-	audio {
-	display: none;
-}
-	background-color: #f2f2f2;
 	padding: 20px;
-	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+h1 {
+	font-size: 48px;
+	margin-top: 0;
+	margin-bottom: 20px;
+	display: flex;
+	align-items: center;
+}
+
+h1 img {
+	width: 50px;
+	height: 50px;
+	margin-right: 20px;
+}
+
+nav {
+	margin-top: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 nav ul {
+	list-style: none;
 	display: flex;
-	justify-content: space-between;
-	align-items: center;
 }
 
 nav li {
@@ -59,6 +73,11 @@ nav li {
 nav a {
 	font-weight: bold;
 	text-transform: uppercase;
+	transition: color 0.3s ease;
+}
+
+nav a:hover {
+	color: #666;
 }
 
 nav .login,
@@ -67,21 +86,12 @@ nav .signup {
 	color: #fff;
 	padding: 10px 20px;
 	border-radius: 5px;
+	transition: background-color 0.3s ease;
 }
 
 nav .login:hover,
 nav .signup:hover {
 	background-color: #666;
-}
-
-h1 {
-	font-size: 48px;
-	margin-top: 20px;
-}
-
-h2 {
-	font-size: 24px;
-	margin-top: 20px;
 }
 
 /* Main content styles */
@@ -94,11 +104,21 @@ main {
 
 section {
 	margin-bottom: 40px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
 }
 
-h3 {
-	font-size: 32px;
-	margin-bottom: 10px;
+h2 {
+	font-size: 24px;
+	margin-top: 0;
+	margin-bottom: 20px;
+}
+
+p {
+	margin-top: 0;
+	margin-bottom: 20px;
 }
 
 blockquote {
@@ -131,7 +151,9 @@ form input[type="submit"] {
 	color: #fff;
 	padding: 10px 20px;
 	border: none;
+	border-radius: 5px;
 	cursor: pointer;
+	transition: background-color 0.3s ease;
 }
 
 form input[type="submit"]:hover {
@@ -162,27 +184,4 @@ footer li {
 
 footer a {
 	color: #fff;
-}
-
-/* Responsive styles */
-
-@media screen and (max-width: 768px) {
-	header {
-		padding: 10px;
-	}
-
-	nav ul {
-		display: block;
-	}
-
-	nav li {
-		margin-right: 0;
-		margin-bottom: 10px;
-	}
-
-	nav .login,
-	nav .signup {
-		display: block;
-		margin-bottom: 10px;
-	}
 }
